@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-primary: #F3F5FC;
+    --color-secundary: #FFFFFF;
+    --color-main-button: #0A3871;
+    --color-secundary-button: #D8DFE8;
+
+    --color-font: #0A3871;
+    --color-font-main-button: #FFFFFF;
+    --color-font-secundary-button: #0A3871;
+    --color-font-hints: #495057;
+    
+    --font-inter: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-primary);
+    color: var(--color-font);
+}
+
+.header {
+    display: flex;
+}
+
+.header__logo {
+    padding: 40px 0px 0px 40px;
+    width: 120px;
+    height: 48px;
+}
+
+.presentation {
+    font-family: var(--font-inter);
+    align-items: top;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.presentation__content {
+    padding: 128px 0px 0px 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation__input {
+    font-family: var(--font-inter);
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-font);
+    
+    background-color: var(--color-primary);
+    border: none;
+    outline: none;
+    width: 577px;
+    height: 48px;
+}
+
+.presentation__input::placeholder {
+    color: var(--color-font);
+}
+
+.presentation__hints {
+    padding: 595px 0px 16px 0px;
+    font-family: var(--font-inter);
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--color-font-hints);
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.presentation__hints-image {
+    width: 16px;
+    height: 16px;
+    margin: 0px 8px 0px 0px;
+}
+
+.presentation__links {
+    display: flex;
+    justify-content: space-between;
+    justify-content: left;
+    height: 67px;
+    gap: 24px;
+    padding: 0px 0px 72px 0px;
+}
+
+.presentation__links__main__link {
+    font-family: var(--font-inter);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-font-main-button);
+    background-color: var(--color-main-button);
+    border: none;
+    border-radius: 24px;
+    width: 328px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: var(--color-main-button) 1px solid;
+}
+
+.presentation__links__secundary__link {
+    font-family: var(--font-inter);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-font-secundary-button);
+    background-color: var(--color-secundary-button);
+    border: none;
+    border-radius: 24px;
+    width: 328px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: var(--color-font-secundary-button) 1px solid;
+}
+
+.presentation__result {
+    margin: -48px 40px 40px 80px;
+    height: 944px;
+    width: 400px;
+    background-color: var(--color-secundary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.presentation__result-image {
+    width: 336px;
+    height: 304px;
+}
+
+.presentation__result__text {
+    margin: 32px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+}
+
+.presentation__result__text__title {
+    padding: 24px 0px 0px 0px;
+    font-family: var(--font-inter);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-font);
+    text-align: center;
+}
+
+.presentation__result__text__subtitle {
+    padding: 16px 0px 0px 0px;
+    font-family: var(--font-inter);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-font-hints);
+    text-align: center;
+}
+/* @media (max-width: 768px) {
+    
+    .presentation {
+        padding: 5%;
+        flex-direction: column-reverse;
+    }
+
+    .presentation__input {
+        width: 688px;
+    }
+}
+@media (max-width: 1200px) {
+
+    .presentation {
+        padding: 5%;
+        flex-direction: column-reverse;
+    }
+
+} */
