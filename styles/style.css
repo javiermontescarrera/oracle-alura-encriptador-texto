@@ -346,15 +346,22 @@ body {
     }
 
     .presentation__links__main__link {
-        height: 67px;
+        padding: 1rem 0rem 1rem 0rem;
     }
 
     .presentation__links__secundary__link {
-        height: 67px;
+        padding: 1rem 0rem 1rem 0rem;
+    }
+
+    .presentation__result {
+        margin-top: 1rem;
     }
 
     .presentation__result__empty {
-        padding: 2rem 2rem 2rem 2rem;
+        box-sizing: border-box;
+    }
+
+    .presentation__result__not__empty {
         box-sizing: border-box;
     }
 }
