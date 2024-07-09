@@ -14,30 +14,30 @@
     </header>
     <main class="presentation">
         <section class="presentation__content">
-            <textarea class="presentation__input" placeholder="Ingrese el texto aqui"></textarea>
+            <textarea onkeyup="validateText(this);" id="input-text" class="presentation__input" placeholder="Ingrese el texto aqui" pattern="[a-z0-9]+"></textarea>
             <div class="presentation__hints">
                 <img class="presentation__hints__image" src="./assets/images/bi_exclamation-circle-fill.png" alt="">
                 <p>Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="presentation__links">
-                <a class="presentation__links__main__link" >
+                <a onclick="encript_input_text();" class="presentation__links__main__link" >
                     Encriptar
                 </a>
-                <a class="presentation__links__secundary__link" >
+                <a onclick="decript_input_text();" class="presentation__links__secundary__link" >
                     Desencriptar
                 </a>
             </div>
         </section>
         <section class="presentation__result">
-            <div class="presentation__result__empty">
+            <div id="empty-result-div" class="presentation__result__empty">
                 <img class="presentation__result__empty__image" src="./assets/images/Muneco.png" alt="muneco">
                 <div class="presentation__result__empty__text">
                     <h2 class="presentation__result__empty__text__title">Ningún mensaje fue encontrado</h2>
                     <p class="presentation__result__empty__text__subtitle">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
             </div>
-            <div class="presentation__result__not__empty">
-                <textarea name="" class="presentation__result__not__empty__text" id="" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</textarea>
+            <div id="not-empty-result-div" class="presentation__result__not__empty">
+                <textarea id="result_textarea" class="presentation__result__not__empty__text" readonly></textarea>
                 <div class="presentation__links">
                     <a class="presentation__links__secundary__link" >
                         Copiar
@@ -49,5 +49,6 @@
     <footer class="footer">
         <p>Desarrollado por Javier Montes</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
