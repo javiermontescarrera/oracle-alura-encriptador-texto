@@ -11,6 +11,8 @@
     --color-font-main-button: #FFFFFF;
     --color-font-secundary-button: #0A3871;
 
+    --color-footer: #D8DFE8;
+
     --font-inter: "Inter", sans-serif;
 }
 
@@ -160,7 +162,7 @@ input[type="text"]:placeholder-shown + .presentation__result__not__empty {
 .presentation__result__empty {
     padding: 0rem 2rem 0rem 2rem;
     height: 100%;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -200,7 +202,7 @@ input[type="text"]:placeholder-shown + .presentation__result__not__empty {
 .presentation__result__not__empty {
     padding: 2rem 2rem 0rem 2rem;
     height: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: top;
     align-items: center;
@@ -217,6 +219,16 @@ input[type="text"]:placeholder-shown + .presentation__result__not__empty {
     border: none;
     resize: none;
     text-align:left;
+}
+
+.footer {
+    padding: 1.5rem;
+    background-color: var(--color-footer);
+    color: var(--color-font);
+    text-align: center;
+    font-family: var(--font-inter);
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 /* @media (max-width: 768px) {
