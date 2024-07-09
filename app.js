@@ -1,6 +1,8 @@
 let originals = ['a', 'e', 'i', 'o', 'u'];
 let encripted_results = ['ai', 'enter', 'imes', 'ober', 'ufat'];
 
+let previous_text = '';
+
 // Esta fucion recorre el texto original y encripta
 // cada vocal encontrada utilizando su respectivo resultado encriptado
 // si el caracter no es una vocal, entonces, simplemente, 
@@ -46,26 +48,52 @@ function validateText(e) {
     let emptyResultDiv = document.getElementById("empty-result-div");
     let notEmptyResultDiv = document.getElementById("not-empty-result-div");
     
+    if (previous_text !== text) {
+        reset_result();
+        previous_text = text;
+    }
+
     if (text.length > 0) {
         emptyResultDiv.style.display = "none";
         notEmptyResultDiv.style.display = "flex";
     } else {
         emptyResultDiv.style.display = "flex";
         notEmptyResultDiv.style.display = "none";
-        document.getElementById("result_textarea").innerHTML = "";
     }
 }
 
+function reset_result() {
+    document.getElementById("result_textarea").innerHTML = "";
+}
+
 function encript_input_text() {
+    reset_result();
     let text = document.getElementById("input-text").value;
-    let result = encript(text);
-    document.getElementById("result_textarea").innerHTML = result;
+    if (validate_input_text(text)){
+        let result = encript(text);
+        document.getElementById("result_textarea").innerHTML = result;
+    }
 }
 
 function decript_input_text() {
+    reset_result();
     let text = document.getElementById("input-text").value;
-    let result = decript(text);
-    document.getElementById("result_textarea").innerHTML = result;
+    if (validate_input_text(text)){
+        let result = decript(text);
+        document.getElementById("result_textarea").innerHTML = result;
+    }
+}
+
+function validate_input_text(text) {
+    const validationMessage = document.getElementById('validation-message');
+    const regex = /^[a-z\s]+$/;
+    let result=true;
+
+    if (!regex.test(text)) {
+        result=false;
+        alert("Solo puede ingresar letras minúsculas y sin acentos");
+    }
+    return result;
 }
 
 function copyToClipboard() {
