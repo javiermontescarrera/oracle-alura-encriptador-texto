@@ -13,10 +13,13 @@ El desafío consistió en desarrollar un encriptador y desencriptador de textos 
  
 
 ## Vista de pc
+<img width="505" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/172c29b4-4e9b-4f16-8bf0-2b89dc09c63d">
 
 
 ## Vista de tablet
+<img width="249" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/f3457dbb-ac30-486d-a1fe-4c119a567a24">
 
 
 ## Vista de celular
+<img width="151" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/2e6f922c-a43b-4cc0-be93-7e2237fd8ff9">
 
