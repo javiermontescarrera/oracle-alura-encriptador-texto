@@ -67,3 +67,7 @@ function decript_input_text() {
     let result = decript(text);
     document.getElementById("result_textarea").innerHTML = result;
 }
+
+function copyToClipboard() {
+    navigator.clipboard.writeText(document.getElementById("result_textarea").innerHTML);
+}
