@@ -18,13 +18,16 @@ Como un extra, he agregado un interruptor para cambiar a modo oscuro 🌑. Esta 
 
 ## Modo oscuro:
 ### Vista de pc
-
+<img width="702" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/cd61985a-cc57-418b-8a0d-be93a3b23331">
 
 
 ### Vista de tablet
+<img width="340" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/25073d4f-11d5-4893-bbe8-12ebd702ac93">
+
 
 
 ### Vista de celular
+<img width="218" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/6041ba87-f2fd-484c-803b-1a54ac856352">
 
 
 
