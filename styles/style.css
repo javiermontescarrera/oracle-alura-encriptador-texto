@@ -26,8 +26,34 @@ body {
     color: var(--color-font);
 }
 
+body.dark__mode {
+    --color-primary: #1E1E1E;
+    --color-secundary: #333333;
+    --color-main-button: #BB86FC;
+    --color-font: #E0E0E0;
+    --color-font-secundary: #CCCCCC;
+    --color-font-main-button: #1E1E1E;
+    --color-font-secundary-button: #BB86FC;
+    --color-footer: #444444;
+}
+
+body.dark__mode .presentation__result__not__empty__text {
+    background-color: var(--color-secundary);
+    color: var(--color-font);
+}
+
+/* Additional dark mode styles */
+body.dark__mode .presentation__result__not__empty__text {
+    background-color: #333333; /* Adjust to your desired dark background color */
+    color: #E0E0E0; /* Adjust to your desired light text color */
+}
+
 .header {
     display: flex;
+    justify-content: space-between; /* Ensure space between logo and toggle switch */
+    align-items: center; /* Center items vertically */
+    padding: 10px 40px; /* Adjust padding as needed */
+    position: relative; /* To position the toggle switch container absolutely within it */
 }
 
 .header__logo {
@@ -35,6 +61,79 @@ body {
     width: 120px;
     height: 48px;
 }
+
+.toggle__switch__container {
+    position: absolute;
+    top: 10px; /* Adjust top positioning as needed */
+    right: 40px; /* Adjust right positioning as needed */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle__switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle__switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle__label {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.toggle__label:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .toggle__label {
+    background-color: #2196F3;
+}
+
+input:checked + .toggle__label:before {
+    transform: translateX(26px);
+}
+
+body.dark__mode .toggle__label {
+    background-color: #555;
+}
+
+body.dark__mode input:checked + .toggle__label {
+    background-color: #0A3871;
+}
+
+.toggle__switch__container i {
+    font-size: 1.5rem;
+    color: var(--color-font);
+}
+
+/* Dark mode styles */
+body.dark__mode .toggle__switch__container i {
+    color: var(--color-font-secundary);
+}
+
 
 .presentation {
     font-family: var(--font-inter);
@@ -253,9 +352,18 @@ body {
 }
 
 @media (max-width: 768px) {
+    .header {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+
     .header__logo {
         padding: 74px 0px 0px 0px;
         height: 51px;
+    }
+
+    .toggle__switch__container {
+        top: 10px; /* Adjust top positioning for smaller screens if needed */
+        right: 20px; /* Adjust right positioning for smaller screens if needed */
     }
 
     .presentation {

@@ -99,3 +99,7 @@ function validate_input_text(text) {
 function copyToClipboard() {
     navigator.clipboard.writeText(document.getElementById("result_textarea").innerHTML);
 }
+
+document.getElementById('dark-mode-toggle').addEventListener('change', function () {
+    document.body.classList.toggle('dark__mode');
+});
