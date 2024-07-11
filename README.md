@@ -22,16 +22,16 @@ Como un extra, he agregado un interruptor para cambiar a modo oscuro 🌑. Esta 
 
 | Modo Claro | Modo Oscuro |
 | --- | --- |
-| <img width="505" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/172c29b4-4e9b-4f16-8bf0-2b89dc09c63d"> | <img width="702" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/cd61985a-cc57-418b-8a0d-be93a3b23331"> |
+| <img width="719" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/0c23db86-7b82-46f3-ba26-bd759cc67473"> | <img width="719" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/19c3bee5-7316-4953-bc1d-4176deb58ed6"> |
 
 ### Vista de Tablet
 
 | Modo Claro | Modo Oscuro |
 | --- | --- |
-| <img width="249" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/f3457dbb-ac30-486d-a1fe-4c119a567a24"> | <img width="340" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/25073d4f-11d5-4893-bbe8-12ebd702ac93"> |
+| <img width="361" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/6ecf27b8-a6eb-46a8-b84a-638632090fab"> | <img width="365" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/10337d3f-73b9-455a-8c5a-6f35a2287a7f"> |
 
 ### Vista de Celular
 
 | Modo Claro | Modo Oscuro |
 | --- | --- |
-| <img width="151" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/2e6f922c-a43b-4cc0-be93-7e2237fd8ff9"> | <img width="218" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/6041ba87-f2fd-484c-803b-1a54ac856352"> |
+| <img width="237" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/af483276-bff5-4e9e-aa96-1d59f6d0aab0"> | <img width="238" alt="image" src="https://github.com/javiermontescarrera/oracle-alura-encriptador-texto/assets/7554008/f8d93670-a5c0-4afb-a120-f978405abf6f"> |
